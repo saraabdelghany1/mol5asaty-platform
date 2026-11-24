@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ملخصاتي - منصتك التعليمية المجانية لطلاب المرحلة الثانوية المصرية">
+  <title>ملخصاتي | طريقك نحو التفوق</title>
+  <style>
+    :root {
+      --navy: #101D35;
+      --gold: #D6B66D;
+      --white: #F5F7FA;
+      --green: #2D8A75;
+      --text: #25334B;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Tahoma, Arial, sans-serif;
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 16px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo { font-size: 25px; font-weight: bold; color: var(--gold); }
+
+    nav { display: flex; gap: 20px; flex-wrap: wrap; }
+    nav a { font-size: 14px; }
+    nav a:hover { color: var(--gold); }
+
+    .hero {
+      background: linear-gradient(135deg, #101D35, #203B60);
+      color: white;
+      padding: 75px 7%;
+      text-align: center;
+    }
+
+    .hero .tag {
+      color: var(--gold);
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 { font-size: clamp(30px, 5vw, 48px); margin-bottom: 15px; }
+    .hero p { max-width: 650px; margin: auto; color: #dce4ef; }
+
+    .actions {
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 9px;
+      font-weight: bold;
+    }
+
+    .btn-gold { background: var(--gold); color: var(--navy); }
+    .btn-outline { border: 1px solid white; color: white; }
+
+    section { padding: 55px 7%; }
+    .section-title { text-align: center; margin-bottom: 30px; }
+    .section-title h2 { color: var(--navy); font-size: 28px; }
+    .section-title p { color: #68758a; font-size: 14px; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      border: 1px solid #e6eaf0;
+      box-shadow: 0 5px 18px #101d350b;
+      transition: .2s;
+    }
+
+    .card:hover { transform: translateY(-5px); }
+    .card .icon { font-size: 32px; margin-bottom: 10px; }
+    .card h3 { color: var(--navy); margin-bottom: 8px; }
+    .card p { font-size: 14px; color: #68758a; }
+
+    .grades { background: #edf1f6; }
+
+    .grade-card {
+      text-align: center;
+      border-top: 4px solid var(--gold);
+    }
+
+    .grade-card a {
+      display: inline-block;
+      margin-top: 15px;
+      color: var(--green);
+      font-weight: bold;
+    }
+
+    .contact {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    .contact h2 { color: var(--gold); margin-bottom: 10px; }
+    .contact p { margin-bottom: 18px; }
+
+    footer {
+      background: #0a1426;
+      color: #b9c3d2;
+      text-align: center;
+      padding: 18px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header { justify-content: center; text-align: center; }
+      nav { justify-content: center; gap: 12px; }
+      .hero { padding: 55px 6%; }
+      section { padding: 40px 6%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="#" class="logo">✦ ملخصاتي</a>
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#services">خدماتنا</a>
+    <a href="#grades">الصفوف الدراسية</a>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="tag">منصتك التعليمية المجانية</div>
+    <h1>طريقك نحو التفوق يبدأ من هنا</h1>
+    <p>
+      كل ما تحتاجه في مكان واحد: ملخصات منظمة، مذكرات،
+      امتحانات إلكترونية، شروحات وبنوك أسئلة للمرحلة الثانوية المصرية.
+    </p>
+    <div class="actions">
+      <a href="#grades" class="btn btn-gold">ابدأ التعلم الآن</a>
+      <a href="#services" class="btn btn-outline">اكتشف خدماتنا</a>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="section-title">
+      <h2>كل أدوات التفوق في مكان واحد</h2>
+      <p>مصادر تعليمية تساعدك على المذاكرة والاستعداد للامتحانات</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="icon">📚</div>
+        <h3>الملخصات والمذكرات</h3>
+        <p>ملخصات دراسية منظمة ومذكرات PDF لمساعدتك على المراجعة.</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">📝</div>
+        <h3>الامتحانات الإلكترونية</h3>
+        <p>اختبر معلوماتك وتدرب على نماذج متنوعة من الأسئلة.</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🎥</div>
+        <h3>شرح الدروس</h3>
+        <p>روابط الشروحات التعليمية والفيديوهات لمختلف المواد.</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🎯</div>
+        <h3>بنوك الأسئلة</h3>
+        <p>تدريبات وأسئلة متنوعة مع الإجابات لمراجعة المنهج.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="grades" id="grades">
+    <div class="section-title">
+      <h2>اختر صفك الدراسي</h2>
+      <p>ابدأ رحلتك التعليمية واختر المرحلة المناسبة لك</p>
+    </div>
+
+    <div class="cards">
+      <article class="card grade-card">
+        <div class="icon">🎓</div>
+        <h3>الصف الأول الثانوي</h3>
+        <p>ملخصات وامتحانات ومراجعات لجميع المواد.</p>
+        <a href="#contact">قريبًا ←</a>
+      </article>
+
+      <article class="card grade-card">
+        <div class="icon">📖</div>
+        <h3>الصف الثاني الثانوي</h3>
+        <p>مذكرات وتدريبات ومصادر تعليمية متنوعة.</p>
+        <a href="#contact">قريبًا ←</a>
+      </article>
+
+      <article class="card grade-card">
+        <div class="icon">🏆</div>
+        <h3>الصف الثالث الثانوي</h3>
+        <p>مراجعات شاملة وامتحانات وبنوك أسئلة.</p>
+        <a href="#contact">قريبًا ←</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>نحن هنا لمساعدتك</h2>
+    <p>للتواصل والاستفسارات حول منصة ملخصاتي</p>
+    <a class="btn btn-gold"
+       href="https://wa.me/201055317271"
+       target="_blank" rel="noopener">
+       تواصل معنا عبر واتساب
+    </a>
+  </section>
+</main>
+
+<footer>
+  جميع الحقوق محفوظة © ملخصاتي 2026
+  <br>
+  منصة تعليمية مجانية لجميع الطلاب
+</footer>
+
+</body>
+</html>
